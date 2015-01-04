@@ -1,0 +1,105 @@
+/* =========================评论模块========================= */
+.comment-box{ font-size: 14px; font-family: "microsoft yahei";}
+/*speak-box*/
+.comment-box .speak-box{ padding: 10px 10px 10px 60px; background: #f6f6f6;}
+.comment-box .speak-box .avatar, .comment-li .avatar, .comment-li .reply-box .avatar{ float: left; margin-left: -50px; width: 40px; height: 40px;}
+.comment-box .speak-box .avatar img, .comment-li .avatar img, .comment-li .reply-box .avatar img{ border-radius: 50%;}
+.comment-box .speak-box .name, .comment-li .info .name{ color: #5474b5;}
+.comment-box .speak-box .input-box{ position: relative; width: 100%; margin: 10px 0;}
+.comment-box .speak-box .delta, .comment-box .speak-box .delta2{ position: absolute; left: -6px; top: 20px; width: 0; height: 0; border-style: solid; border-color: transparent #e0e0e0 transparent transparent; border-width: 6px 6px 6px 0;}
+.comment-box .speak-box .delta2{ left: -5px; border-color: transparent #fff transparent transparent;}
+.comment-box .speak-box textarea, .comment-li .reply-box textarea{ display:block; box-sizing:border-box; width: 100%; height: 80px; border: 1px solid #e0e0e0; border-radius: 2px 2px 0 0; padding: 5px;}
+.comment-li .reply-box textarea{ height: 60px;}
+.comment-box .speak-box .bar{ padding-right:45px;}
+.comment-box .speak-box .expression{ float: left; width: 100%; background: #fff; border-left:1px solid #dddddd; border-bottom: 1px solid #dddddd; height: 26px; box-sizing:border-box; border-radius: 0 0 0 4px;}
+.comment-box .speak-box .expression i{ float:left; margin: 2px 5px; font-size: 1.4em; color:#666;}
+.comment-box .speak-box .btn, .comment-li .reply-box .btn{ float: right; margin-right: -45px; width: 45px; height: 26px; border:none; background: #dddddd; color: #666; border-radius: 0 0 4px 0; font-size: .9em;}
+.comment-box .speak-box .btn:hover, .comment-li .reply-box .btn:hover{ background: #666; color: #ddd; cursor: pointer;}
+.comment-box .social-info{ color: #999;}
+.comment-box .social-info i{ float:left; font-size: 2em; margin-right: 8px;}
+.comment-box .social-info a{ color: #5474b5; text-decoration: underline;}
+.comment-box .social-info span{ float: left; margin-right: 5px; font-size: .9em;}
+.comment-box .social-info .f-weibo{ color: #e4423f;}
+.comment-box .social-info .f-qq{ color: #5ca6eb;}
+.comment-box .social-info .f-wechat{ color: #5aca45;}
+/*sort-box*/
+.comment-box .sort-box{ color: #333; font-size: .8em; margin: 15px 0; padding: 0 8px;}
+.comment-box .sort-li{ float: left; margin-right: 10px; padding:2px 8px;}
+.comment-box .sort-box .cur{ background: #333; color: #fff; border-radius:4px;}
+/*comment-ul*/
+.comment-box .comment-ul{ padding: 10px 14px 10px 60px;}
+.comment-box .comment-li{ padding-top: 20px;}
+.comment-li .info, .comment-li .detail, .comment-li .status, .comment-li .like-box, .comment-li .reply-box, .comment-li .reply-ul, .comment-li .more{ float: left; width: 100%;}
+.comment-li .info .name{ float: left;}
+/*.comment-li .info .time{ float: right; color: #999; font-size: .7em;}*/
+.comment-li .detail{ line-height: 16px; margin: 0px 0 10px;}
+.comment-li .status{ color: #5474b5; text-align: right; margin-bottom: 10px;}
+.comment-li .status .time{ float: left; color: #999; font-size: .7em;}
+.comment-li .status .blk{ margin-left: 10px;}
+.comment-li .status .blk:hover, .comment-li .reply-handle .ico:hover{ cursor: pointer; color: #26437E;}
+.comment-li .status a{ color: #5474b5;}
+.comment-li .status i{ display: inline-block; vertical-align: top; margin: 0 5px;}
+.comment-li .like-box{ color: #5474b5; background: #f6f6f6; border-bottom: 1px solid #eee; margin-left: -23px; padding: 8px 10px; line-height: 18px; box-sizing: border-box; font-size: .8em;}
+.comment-li .like-box i{ margin: 0 5px; font-size: 1rem;}
+.comment-li .reply-box{ background: #f6f6f6; margin-left: -23px; padding: 5px 10px 5px 35px; box-sizing: border-box;}
+.comment-li .reply-box .btn{ height: 26px; line-height: 26px; margin:5px 0 0 0; border-radius: 4px;}
+.comment-li .like-box .ava{ display: inline-block; width: 35px; height: 35px;}
+.comment-li .like-box .ava img{ border-radius: 50%;}
+.comment-li .reply-ul{ color: #333; background: #f6f6f6; font-size: .9em; margin-left: -23px;}
+.comment-li .reply-li{ padding: 10px 10px 0 35px;}
+.comment-li .reply-li i{ font-size: .9rem;}
+.comment-li .reply-li .avatar, .comment-li .reply-box .avatar{ margin: 0 0 0 -30px; width: 25px; height: 25px;}
+.comment-li .reply-con{ line-height: 18px;}
+.comment-li .reply-con b{ color: #5474b5;}
+.comment-li .reply-handle .time{ font-size: .8em; color: #999;}
+.comment-li .reply-handle .ico{ float: right; color: #5474b5;}
+.comment-li .reply-handle .f-close{ font-size: .7em;}
+.comment-li .more{ color: #999; background: #f6f6f6; text-align: center; margin:2px 0 0 -23px; line-height: 24px; font-size: .9em;}
+.comment-li-more{ display: block; margin:10px; height: 30px; line-height: 30px; text-align: center; color: #666; background: #ddd; border-radius: 4px;}
+.comment-li .more:hover, .comment-li-more:hover{ color: #fff; background: #aaa; cursor: pointer;}
+.impowerBox .qrcode {width: 100px;}
+
+/* 我的留言 */
+.comment-msg-tab{border-radius: 4px;color:#666; margin-top:12px;margin-left:-10px;}
+.comment-msg-tab li{float:left;text-align: center;cursor: pointer;}
+.comment-msg-tab .tab{display: inline-block;margin: 0 10px;padding:2px 0;}
+.comment-msg-tab .cur .tab{color:#fff;border-radius: 4px;background:#333;padding:2px 6px;}
+.comment-msg-con{color:#333;}
+.comment-msg-con .info{color:#999;margin-bottom: 10px;font-size:12px;}
+.comment-msg-con .name{padding-right:10px;font-size:14px;}
+.comment-msg-con .cx-tit{color:#5474b5;display: inline-block;}
+.comment-msg-con .f-rarr{text-align: right;}
+.comment-msg-con .my-comment{display: none;}
+.comment-msg-con .type{color:#999;margin-top:8px;float:left;width:100%;font-size:12px;}
+.comment-msg-con .subtype{background:#fff6dc;border-radius:8px;padding:3px 5px; margin-ri   ght:10px;}
+.comment-msg-con .reply{background:#f6f6f6;border-radius: 4px;padding:20px 15px 15px;margin-top:12px;float:left;position:relative; }
+.comment-msg-con .reply .name{color:#324d82;}
+.comment-msg-con .arrow{width: 0;height: 0;display: inline-block;border-style: solid;border-color:transparent;border-color: transparent\0;*border-color: transparent;overflow: hidden; border-width: 0 10px 10px 10px;border-bottom-color: #f6f6f6;top: -10px;left:85px;position: absolute;}
+.comment-msg-con .f-qklogo{color:#ed1921;margin-right:5px;}
+.comment-msg-con .comment-more{text-align: center;display: block;color:#999;}
+.comment-msg-con .comment-bar{height: 40px;padding: 10px 0 5px; }
+.comment-msg-con .btn{background: #c71a1a;border-radius: 4px;height: 35px;line-height: 35px;width:230px;display: inline-block;color:#fff;text-align: center;font-size:18px;}
+.comment-msg-con .btn:hover{text-decoration: none;background:#E00A0A;}
+.no-comment{text-align: center;padding:100px 0;}
+.no-comment .f-comment{font-size:10em;color:#ccc;}
+.no-comment .f-comment:after{height:140px;line-height: 140px;}
+.no-comment p{margin-bottom:80px;}
+
+.give-msg-box{color:#575757;padding:12px 0 18px 0;overflow: hidden;}
+.give-msg-box p{padding:12px 25px;font-size:14px;}
+.give-msg-box .tit{font-size:16px;font-weight: bold;}
+.feed-back-type{background: #f6f6f6;padding:8px 10px;color:#999;margin: 0 25px;font-size:14px;}
+.feed-back-con{padding: 12px 25px 0;font-size:14px;}
+.feed-back-con .hd{color:#999;}
+.feed-back-con span{color:#c71a1a;}
+.feed-back-con textarea{width:100%;height:110px;margin-top:12px;padding: 10px;width:730px;}
+.give-msg-box .btn{background:#c71a1a;color:#fff;height:35px;line-height: 35px;width:135px;margin: 0 auto;border-radius: 4px;border:none;display: block;margin-top:12px;font-size:14px;}
+.give-msg-box .btn:hover{background:#E00A0A;}
+.give-msg-box .contact-us{border-top:1px solid #ccc;margin-top:15px;padding-left:25px;margin-left:-26px;}
+.give-msg-box .contact-us dt{font-weight: bold;padding:25px 25px 15px;font-size:16px;}
+.give-msg-box .contact-us dd{float:left; border-left: 1px solid #ccc;padding:0 25px;}
+.give-msg-box .contact-us .right-con{float:left;margin-top:15px;margin-left:10px;}
+.give-msg-box .contact-us .red-text{color:#c71a1a;display: block;font-size:20px;margin-bottom:5px;}
+.give-msg-box .contact-us .info{font-size:17px;}
+.give-msg-box .contact-us .f-contact{background:url(../images/contact.png) no-repeat;display: block;width:63px;height:68px;}
+.give-msg-box .contact-us .f-wechat{color:#c71a1a;font-size:70px;line-height: 70px;}

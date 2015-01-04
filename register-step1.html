@@ -1,0 +1,66 @@
+<!--#include file="_head.html" -->
+<body>
+<!--#include file="_header.html" -->
+<!--regedit-box-->
+<div class="regedit-box wrap clearfix">
+	<div class="regedit-main">
+		<ul class="regedit-schedule clearfix">
+			<li class="no1">1. 填写账户信息</li>
+			<li class="no2 next"><i></i>2. 注册成功，完善资料</li>
+			<li class="no3 unfinish"><i></i>3. 完成，开始购车之旅</li>
+		</ul>
+		<div class="regedit-area">
+			<div class="regedit-area-tit">
+				<strong>填写账户信息</strong>
+				【确保您接收到网站第一时间的服务】
+			</div>
+			<ul class="regedit-ul clearfix">
+				<li>
+					<label for="reg-tel"><span class="hotred">*</span> 手机号码：</label>
+                    <textarea name="phone" class="reg-phone" id="reg-tel"></textarea>
+					<label for="name" class="error">用户名不能为空！</label>
+				</li>
+				<li>
+					<label for="reg-pw"><span class="hotred">*</span> 设置密码：</label>
+					<input id="reg-pw" type="text" />
+					<label for="name" class="error">用户名不能为空！</label>
+				</li>
+				<li>
+					<label for="reg-pw2"><span class="hotred">*</span> 确认密码：</label>
+					<input id="reg-pw2" type="text" />
+					<label for="name" class="error">用户名不能为空！</label>
+				</li>
+				<li>
+					<label for="reg-code"><span class="hotred">*</span> 验证码：</label>
+					<input id="reg-code" class="code" type="text" />
+					<img src="images/tmp/code.png" alt="" />
+					<label for="name" class="error">用户名不能为空！</label>
+				</li>
+				<li class="sp">
+					<input id="reg-checkout" type="checkbox" />
+					<label for="reg-checkout">我同意<a href="#" class="link">《乾坤车城服务协议》</a></label>
+				</li>
+				<li class="sp">
+					<a href="regedit-step2.html" class="btn">立即注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <!--#include file="_regedit-other.html"-->
+</div>
+<!--/regedit-box-->
+<!--#include file="_footer.html"-->
+
+<script src="http://cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/qk.js"></script>
+<script>
+overShow("j-classify","j-classify-title","j-classify-con");
+overShow("j-search","j-search-ico","j-search-con");
+tab("j-classify-tabul","li","j-classify-tabcons","div");
+</script>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.png')</script>
+<![endif]-->
+</body>
+</html>

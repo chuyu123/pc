@@ -1,0 +1,81 @@
+<!--#include file="_head.html"-->
+<body>
+<!--#include file="_header.html"-->
+<!--container-->
+<div class="container">
+	<div class="wrap mt20 clearfix">
+		<!--main-->
+		<div class="main">
+			<div class="zx-content-box">
+				<div class="title-box">
+					<span class="c1">推荐</span>
+					<h1 class="tit">美国肌肉男来了 用野马爆你G点</h1>
+				</div>
+				<div class="summary">
+					<p><span class="i-date"></span>2000-20-20</p>
+					<p><span class="i-path"></span>乾坤车城【原创】</p>
+				</div>
+				<div class="zx-content">
+					<p>你<a href="#">没看错</a>，就是G点！我们就是来提升你的Glamorous(魅力)点哦，别想歪,泡妞？一点都不难，一匹敞篷野马，让你的魅力劲升10%，魅力爆表就能毫不费力把女友收进囊中。</p>
+					<div>你没看错，就是G点！我们就是来提升你的Glamorous(魅力)点哦，别想歪,泡妞？一点都不难，一匹敞篷野马，让你的魅力劲升10%，魅力爆表就能毫不费力把女友收进囊中。</div>
+				</div>
+			</div>
+		</div>
+		<!--/main-->
+		<!--aside-->
+		<div class="aside">
+			<!--aside-gray-box-->
+			<div class="aside-gray-box">
+				<div class="aside-gray-hd clearfix">
+					<div class="title">相关车型</div>
+				</div>
+				<div class="aside-gray-bd">
+					<ul class="zx-cx-ul clearfix" id="data43cn">
+						<li><a href="#">
+							<span class="pic-zx">
+								<img src="images/tmp/300225.jpg" alt="" width="230" />
+							</span>
+							<p class="tit">美国肌肉男来了 用野马爆你G点美国肌肉男来了 用野马爆你G点</p>
+						</a></li>
+					</ul>
+					<script>data('data43cn',2)</script>
+				</div>
+			</div>
+			<!--/aside-gray-box-->
+			<!--aside-gray-box-->
+			<div class="aside-gray-box mt20">
+				<div class="aside-gray-hd clearfix">
+					<div class="title">最新资讯</div>
+				</div>
+				<div class="aside-gray-bd">
+					<ul class="zx-tit-ul clearfix" id="data3nci">
+						<li class="last-child"><a href="#">【行业】用户＂众分享＂体验大众进口车至..</a></li>
+						<li><a href="#">【行业】用户＂众分享＂体验大众进口车至..</a></li>
+					</ul>
+					<script>data('data3nci',6)</script>
+				</div>
+			</div>
+			<!--/aside-gray-box-->
+		</div>
+		<!--/aside-->
+	</div>
+</div>
+<!--/container-->
+<!--#include file="_footer.html"-->
+
+<script>
+//相关车型长标题展示
+$(function(){
+	$('.zx-cx-ul').find('li').each(function(){
+		$(this).mouseover(function(){
+			var elem = $(this).children().children('.tit');
+			elem.stop().animate({height:40},200);
+		}).mouseout(function(){
+			var elem = $(this).children().children('.tit');
+			elem.stop().animate({height:20},200);
+		});
+	});
+});
+</script>
+</body>
+</html>

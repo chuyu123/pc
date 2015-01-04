@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* 
+CSS Document 
+Author:piercalex
+Date:2014-05-27
+*/
+.pt0{ padding-top:0!important;}
+.activity{background:#0e0b0b url(../../images/activity/act-67/bg.jpg) no-repeat 50% 0; padding-bottom:40px;}
+.head1{ display:block; background:url(../../images/activity/act-67/head1.jpg) no-repeat; height:190px;}
+.head2{ background:url(../../images/activity/act-67/head2.jpg) no-repeat; height:252px;}
+.timecount { display: block; width:600px; color: #fff; font:20px/48px 'microsoft yahei'; margin:0 auto; padding-top:40px;}
+.timecount i { float: left; display:inline; width: 28px; height: 28px; background: url(../../images/activity/act-67/iclock.png) no-repeat; margin-top:10px;}
+.timecount span { float: left; margin: 0 12px;}
+/*.timecount span.endtxt{ font-size:25px; font-weight:700;}*/
+.timecount b { float: left; width: 48px; height: 48px; background: url(../../images/activity/act-67/idate.png) no-repeat; font:36px/48px arial; text-align: center;}
+.act-date{ text-align:center; color:#fff; font:italic 18px 'microsoft yahei'; padding-top:24px;}
+
+/* act-box */
+.act-box{ background: #0e0b0b; padding:40px 0 10px;}
+.tit-us, .tit-jp, .tit-eu{ width:220px; height:58px; background:url(../../images/activity/act-67/c1.jpg) no-repeat; margin:0 auto;}
+.tit-jp{ background-image:url(../../images/activity/act-67/c2.jpg) }
+.tit-eu{ background-image:url(../../images/activity/act-67/c3.jpg) }
+.act-ul-outside{ width:1020px; margin-left:-10px;}
+.act-ul li{ float: left; width:474px; height:254px; overflow: hidden; background:url(../../images/activity/act-67/box.png) no-repeat; margin:20px 10px 0; padding:8px;}
+.act-ul li.none{ background-image:url(../../images/activity/act-67/boxnone.png);}
+.act-ul .fl{ width:240px; padding:7px 0 0 7px;}
+.act-ul .img{ position:relative; display:block; width:238px; height:179px; border:1px solid #bdbdbd; border-radius:2px; text-decoration:none; cursor:pointer;}
+.act-ul .img:hover img{ opacity:.8; filter:alpha(opacity = 80)\9;}
+.act-ul .idown{ position:absolute; left:20px; top:0; width:60px; height:43px; background:url(../../images/activity/act-67/idown.png) no-repeat; color:#fff; font:14px/16px 'microsoft yahei'; text-align:center; padding-top:3px;}
+.act-ul .bm{ position:absolute; left:0; bottom:0; width:100%; height:30px; line-height:30px; overflow:hidden; background:rgba(0,0,0,.7);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)\9; color:#fff; text-align:center;}
+.act-ul .ykj{ float:left; width:100px; margin:10px 10px 0; color:#7d7974;}
+.act-ul .ykj em{ display:block; font:normal 14px 'microsoft yahei'; color:#c93013;}
+.act-ul .ykj em span{ display:block; margin-top:5px; font-size:12px;}
+.act-ul .ykj b{ font:700 24px arial; margin-right:4px;}
+.act-ul .fr{ width:205px; padding:8px 8px 0 0;}
+.act-ul .tit{ display:block; font:18px/25px 'microsoft yahei'; color:#232222; text-align:center; height:50px; overflow:hidden;}
+.act-ul .summary{ font:14px 'microsoft yahei'; color:#8f8b85; margin-top:5px;}
+.act-ul .summary b{ display:block; color:#b48301; padding-bottom:5px;}
+.act-ul .summary i{ font-style:normal; display:block; height:80px; overflow:hidden;}
+.act-ul .btn{ display:block; width:158px; height:32px; overflow:hidden; background:url(../../images/activity/act-67/btn.png) no-repeat; text-align:center; font:18px/32px 'microsoft yahei'; color:#fff; text-decoration:none; margin:15px auto 0;}
+.act-ul .btn:hover{ background-position:0 -40px;}
+.act-ul .info{ color:#8f8b85; font:14px 'microsoft yahei'; text-align:center; margin-top:10px;}
+.act-ul .info span{ color:#c93013;}
+.bmmore{ display:block; width:100%; height:60px; overflow:hidden; text-indent:-987em; background:url(../../images/activity/act-67/bmmore.png) no-repeat; margin-top:30px;}
+
+/*act-nav*/
+.act-nav{ display:none; position:fixed; right:10px; top:50%; width:132px; height:272px; margin-top:-136px; z-index:30; background:url(../../images/activity/act-67/nav.png) no-repeat; overflow:hidden;}
+.act-navul{ position:relative; width:130px; overflow:hidden; margin-top:86px; font:14px/44px 'microsoft yahei'; color:#fce17b; text-align:center;}
+.act-navul li{ position:relative; width:100%; height:44px; overflow:hidden; cursor:pointer; z-index:10;}
+.act-navul a{ display:block; width:100%; height:100%; color:#fce17b; text-decoration:none;}
+.act-navul a:hover{ color:#fff;}
+.act-navul .top{ font:12px/40px arial; padding-left:10px;}
+.act-navul .back{ position:absolute; left:0; top:0; background:url(../../images/activity/act-67/navcur.png) no-repeat; width:130px; height:55px; z-index:9;}
+.selected{ display:block;}
+
+
+.aa-box{ padding:30px 0 0 40px;}
+.aa-1{ display:block; width:126px; height:24px; background:url(../../images/activity/act-67/aa1.jpg) no-repeat;}
+.aa-box .title{ font:14px 'microsoft yahei'; color:#fff; padding: 15px 0 5px; text-align: left;}
+.aa-box .xq-ul label{ width:60px; text-align:left;}
+.aa-box .xq-ul .sp label{ height:72px;}
+.xq-ul input{ margin-left:5px!important;}
+.aa-box .btn{ display: block; margin:20px 0 0 0;}
+.aa-sm2{ background:url(../../images/activity/act-67/aa2.png) no-repeat; width:640px; height:190px; margin:20px 0 0 -40px;}
+.xq-ul .btn-disable{ display:inline-block; width:110px; height:36px; background:#111; text-align:center; cursor:pointer; font:14px/36px "Microsoft Yahei"; color:#333; margin:10px 20px 0 0px;}
+.xq-ul li{ width:100%; margin:15px 0 0;}
+.xq-ul .small{ width:250px;}
+.xq-ul .btn-tip{ display:none; color:#ffa270;}
+#j-act67 textarea{ width:400px;}

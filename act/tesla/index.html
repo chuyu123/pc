@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="css/tesla.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="main-box">
+ <div class="tesla-box">
+ </div>
+ <div class="tesla-box2 clearfix">
+    <img src="images/tesla/pc-mid.png" alt="" width="664" class="left">
+    <div class="right-con">
+        <div class="tabcon">
+                <section>
+                    <dl class="clearfix">
+                        <dd class="nobg clearfix">
+                            <input type="text" class="txt" placeholder="请留下您的姓名" name="realName" id="realName" value="">
+                        </dd>
+                        <dd class="nobg clearfix">
+                            <input type="text" class="txt" placeholder="请留下您的手机号" name="phone" id="phone" value="">
+                        </dd>
+                        <dd>
+                            <input type="password" class="ipt" data-verify="verify" name="password" placeholder="请输入登录密码" value="">
+                        </dd>
+                        <dd>
+                            <select name="byCarTime" id="byCarTime">
+                                    <option value="">请选择</option>
+                                    <option value="合适马上就买">合适马上就买</option>
+                                    <option value="1周内">1周内</option>            
+                                </select>
+                        </dd>
+                        <dd>
+                            <input type="text" class="ipt"  name="text" placeholder="您所从事行业" value="">
+                        </dd>
+                        <dd class="last">
+                            <a class="btn" id="submit" href="#">提交</a>
+                        </dd>
+                    </dl>
+                </section>
+            </div>
+            <div id="popup" class="popup" style="display:none">
+                <div class="inside">
+                    <div class="box">
+                        <div class="popup-hd">
+                            <i class="close"><em></em></i>
+                        </div>
+                        <div class="popup-bd">
+                            预约成功显示提示语"恭喜您已预约成功特斯拉试驾，近期将会有乾坤工作人员与您联系确认试驾事宜。感谢您对乾坤车城的持续关注
+                            <a href="#" class="look">逛逛乾坤</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+ <div class="tesla-box3">
+    <img src="images/tesla/pc-btm.png" alt="" width="100%">
+</div>
+ <div class="yuyue"></div>
+ </div>
+ <!--#include virtual="/p/_head.html" -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#submit").bind("click",function(){
+            popupSubmit();
+        })
+    });
+    function popupSubmit() {
+        $("#popup").show();
+
+        $("#popup .close").click(function(){
+            $("#popup").hide();
+        })
+    }
+</script>
+</body>
+</html>

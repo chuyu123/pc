@@ -1,0 +1,85 @@
+<!--#include file="_head.html" -->
+<body>
+<!--#include file="_header.html" -->
+<script src="js/QiankunUI.js"></script>
+<!--container-->
+<div class="container">
+	<div class="wrap">
+		<!--我要报价-->
+		<div class="other-price-box qingbao-box clearfix" id="other-price-box">
+			<div class="top-banner"></div>
+			<div class="bottom-banner"></div>
+			<ul>
+				<li>
+					<b>*</b>
+					<select class="price-sel">
+			                            <option>请选择活动车系</option>
+			                            <option>请选择活动车系1</option>
+			                     </select>
+				</li>
+				<li>
+					<b>*</b>
+					<select class="price-sel">
+			                            <option>请选择活动车型</option>
+			                            <option>请选择活动车型1</option>
+			                     </select>
+				</li>
+				<li>
+					<b>*</b>
+					<span class="price-ipt-box clearfix">
+						<input class="price-ipt" type="text" value="" placeholder="请输入最低报价">
+						<span class="price-limit">限时价</span>
+						<span class="price-unit">230万</span>
+					</span>
+					<label for="price" class="error" style="display:none">报价不能为空！</label>
+				</li>
+				<li>
+					<b>*</b>
+					<input class="price-ipt" type="text" value="" placeholder="请输入了解到价格的时间">
+					<label for="date" class="error" style="display:none">时间不能为空！</label>
+				</li>
+				<li>
+					<b>*</b>
+					<input class="price-ipt" type="text" value="" placeholder="请输入报价的4S店名">
+					<label for="name" class="error" style="display:none">店名不能为空！</label>
+				</li>
+				
+			</ul>
+			<div class="other-price-right">
+				<div class="upload-box clearfix">
+					<img  class="left" src="images/unUpload.png" id="jspPic-img" name="null" width="120px" height="90px"> 
+					<div class="upload-btn">
+						<p >请上传合同凭证照片 <br>(必须保证15天内有效)</p>
+						<input type="hidden" name="compact" id="compact"> 
+						<a href="javascript:void(0);" id="jquery_upload_1415602839485_0" class="btn" data-loading-text="正在努力上传">上传文件</a>
+					</div>
+				</div>
+				<div class="upload-text">
+					<p>“未上传合同凭证”，审核后将给予10积分奖励 </p>
+					<p>“有上传合同凭证”，审核后将给予200积分奖励 </p>
+				</div>
+				<div>
+					<a href="javascript:void(0)" class="submit" onclick="submitSuccessHopup()">提交</a>
+					<span class="help">
+						 <i class="f-help">&#xe62b;</i>
+						<a href="page-lottery.html">情报员有何奖励</a>
+					</span>
+				
+				</div>
+
+
+			</div>
+		</div>
+		<!--/我要报价-->
+	</div>
+</div>
+<!--/container-->
+<!--#include file="_footer.html"-->
+
+<script>
+overShow("j-classify","j-classify-title","j-classify-con");
+overShow("j-search","j-search-ico","j-search-con");
+tab("j-classify-tabul","li","j-classify-tabcons","div");
+</script>
+</body>
+</html>

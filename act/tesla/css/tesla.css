@@ -1,0 +1,36 @@
+@charset 'utf-8';
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,a{ margin:0; padding:0;}
+body,button,input,select,textarea,td{ font-size:14px; line-height:20px; font-family:"microsoft yahei",sans-serif;}
+ul,ol{ list-style:none;}
+input[type=text], input[type=button], input[type=password]{ -webkit-appearance:none;}
+table{ border-collapse:collapse;}
+a{ text-decoration:none; color:#306bf0;}
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
+.clear{ clear:both;}
+img{padding:0;margin:0;}
+
+body{ background:#e3e3e3;/* Old browsers */}
+/* part iconfont */
+/*特斯拉——————*/
+.main-box{width:1440px;margin:0 auto;}
+.tesla-box{background:url(../images/tesla/pc-top.png) no-repeat;height:433px;width:100%;}
+.tesla-box2 .left{float:left;}
+.right-con{height:185px;background:#c72121;float:left;width:776px;}
+.tesla-box3{background:url(../images/tesla/pc-btm.png) no-repeat;height:220px;width:100%;}
+.tabcon {width:490px;margin:15px 0 0 20px;}
+.tabcon dd{padding:9px 10px;float:left;width:205px;background:#fff;border-radius:4px;margin:5px 15px 5px 0;font-size:1.1em;line-height: 20px;}
+.tabcon input{border:none;text-indent: 10px;width:100%;*width:90%;}
+.tabcon .last{background:#ffd200;text-align: center}
+.tabcon select{color: #a3a3a3;width:100%;border:none;}
+.tabcon .btn{display: block;width:100%;color:#c72121;border:none;}
+
+.popup {display: none;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,.7);z-index: 1000;}
+.popup .inside {position: relative;}
+.popup .box {width: 300px;background: #fff;border-radius: 5px;margin: 200px auto 0;}
+.popup-hd {position: relative;height: 10px;line-height: 40px;text-align: center;font-size: 1.3em;padding: 5px 0 10px;}
+.popup-hd .close {position: absolute;right: 0;top: 0;padding: 10px;}
+.popup-hd .close em {display: block;width: 15px;height: 15px;background: url(../images/tesla/close.png) no-repeat;background-size: 100%;}
+.popup-bd {padding: 10px;}
+.popup-bd .look{display: block;width:40%;margin-top:5px;height:36px;line-height: 36px;border-radius: 4px;background:#c71a1a;color:#fff;font-size:1.1em;text-align: center;margin:10px auto;}
+

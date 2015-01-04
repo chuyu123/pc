@@ -1,0 +1,76 @@
+<!--#include file="_head.html" -->
+<body>
+<!--#include file="_header.html" -->
+<!--regedit-box-->
+<div class="regedit-box wrap clearfix">
+	<div class="regedit-main">
+		<ul class="regedit-schedule clearfix">
+			<li class="no1">1. 填写账户信息</li>
+			<li class="no2"><i></i>2. 注册成功，完善资料</li>
+			<li class="no3 next"><i></i>3. 提交购车需求</li>
+			<li class="no4 unfinish"><i></i>4. 完成，开始购车之旅</li>
+		</ul>
+		<div class="regedit-area">
+			<div class="regedit-area-notice">
+				<p class="stage2">恭喜您，注册成功！</p>
+			</div>
+			<div class="regedit-area-tit">
+				<strong>完整个人资料</strong>
+				【将有利于我们为您提供更优质的服务】
+			</div>
+			<ul class="regedit-ul clearfix">
+				<li>
+					<label for="reg-name"><span class="hotred">*</span> 姓名：</label>
+					<input id="reg-name" type="text" />
+					<label for="name" class="error">用户名不能为空！</label>
+				</li>
+				<li>
+					<label for="reg-mail"><span class="hotred">*</span> 邮箱：</label>
+					<input id="reg-mail" type="text" />
+					<div class="reg-mail-info"><span class="ico"></span>邮箱可用于找回密码</div>
+					<label for="name" class="error">用户名不能为空！</label>
+				</li>
+				<li class="sp">
+					<input id="reg-checkout-mail" type="checkbox" />
+					<label for="reg-checkout-mail" class="reg-checkout-mail">接收乾坤车城的邮件,我们将第一时间通知您乾坤车城的最新特惠抢车活动</label>
+				</li>
+			</ul>
+			<div class="regedit-area-tit">
+				<strong>小调查</strong>
+				【为了帮助我们提升服务，请告知获悉乾坤车城网站的消息来源】
+			</div>
+			<div class="regedit-source clearfix">
+				来源于：
+				<input id="source-search" type="checkbox" />
+				<label for="source-search">搜索引擎</label>
+				<input id="source-ad" type="checkbox" />
+				<label for="source-ad">网络广告</label>
+				<input id="source-weibo" type="checkbox" />
+				<label for="source-weibo">微博/微信</label>
+				<input id="source-friend" type="checkbox" />
+				<label for="source-friend">朋友介绍</label>
+			</div>
+			<div class="clearfix mt20">
+				<a href="#" class="reg-btns">保存</a>
+				<a href="regedit-step3.html" class="reg-btns disable-color">跳过</a>
+			</div>
+		</div>
+	</div>
+    <!--#include file="_regedit-other.html"-->>
+</div>
+<!--/regedit-box-->
+<!--#include file="_footer.html"-->
+
+<script src="http://cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/qk.js"></script>
+<script>
+overShow("j-classify","j-classify-title","j-classify-con");
+overShow("j-search","j-search-ico","j-search-con");
+tab("j-classify-tabul","li","j-classify-tabcons","div");
+</script>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.png')</script>
+<![endif]-->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--#include file="_head.html" -->
+<body>
+<!--#include file="_header.html" -->
+<!--container-->
+<div class="container">
+    <a href="javascript:popup('j-carreqdlg')">发布求购信息</a>
+    <a href="javascript:popup('j-seecardlg')">预约看车</a>
+    <a href="javascript:popup('j-sure')">确定弹窗</a>
+    <a href="javascript:popup('j-surelink')">弹窗带返回链接</a>
+    <a href="javascript:popup('j-thisuscar')">对比美规车提示</a>
+    <a href="javascript:popup('j-act51')">51活动报名</a>
+    <a href="javascript:popup('j-aa-sm')">51活动报名</a>
+</div>
+<!--/container-->
+<!--#include file="_footer.html"-->
+
+<script src="js/slide.js"></script>
+<script>
+    $("#j-index-slide-btn > li").setFocus({
+        focusWrap: "#j-index-slide", //总容器
+        focusBox: "#j-index-slide-ul", //大图容器
+        focusPics: "#j-index-slide-ul > li", //图片选择器
+        handlePrev: "", //上一条按钮
+        handleNext: "", //下一条按钮
+        curClass: "cur", //标识当前样式
+        eventType: "mouseover", //鼠标事件设置
+        eventSpeed: "normal", //动画速度，设0则无动画
+        eventTime: 3000, //轮播间隔时间，设0则不自动轮播
+        scrollDirection: 0, //动画滚动方向,0为左右滚动,1为上下滚动
+        curNum: 0 //标识当前
+    });
+    overShow("j-classify", "j-classify-title", "j-classify-con");
+    overShow("j-search", "j-search-ico", "j-search-con");
+    tab("j-idx-tab", "li", "j-idx-tab-cons", "div");
+    tab("j-favorable-hd", "span", "j-favorable-bd", "ul");
+    tab("j-classify-tabul", "li", "j-classify-tabcons", "div");
+    //点赞
+    $(function () {
+        $('.social-box').find('.socialshare-zan').each(function () {
+            var effObj = $(this).find('.social-zan-effect');
+            $(this).click(function () {
+                effObj.stop().animate({'opacity': '1', 'bottom': '30'}, 500, function () {
+                    $(this).css({'opacity': '', 'bottom': ''})
+                })
+            });
+        })
+    })
+</script>
+</body>
+</html>
